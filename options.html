@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Parameter Remover Options</title>
+    <style>
+      body {
+        width: 400px;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 15px;
+        background-color: #f7f7f7;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.9;
+      }
+      input[type="submit"]:hover {
+        opacity: 1;
+      }
+      #savedConfigurations div {
+        background-color: #f1f1f1;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      #savedConfigurations button {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        cursor: pointer;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>URL Parameter Remover Options</h1>
+    <form id="optionsForm">
+      <label for="urlPattern"><b>URL Pattern</b></label>
+      <input type="text" id="urlPattern" name="urlPattern" />
+      <label for="paramsToRemove"
+        ><b>Parameters to Remove</b> (comma separated)</label
+      >
+      <input type="text" id="paramsToRemove" name="paramsToRemove" />
+      <input type="submit" value="Save" />
+    </form>
+    <hr />
+    <h2>Saved Configurations</h2>
+    <div id="savedConfigurations"></div>
+    <script src="options.js"></script>
+  </body>
+</html>
